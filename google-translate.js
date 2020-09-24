@@ -380,14 +380,6 @@ const GoogleTranslate = function(options = {}) {
       return Promise.resolve(opts.text);
     }
 
-    if (typeof fetch === "undefined") {
-      try {
-        global.fetch = require("node-fetch");
-      } catch (error) {
-        console.warn("Please make sure node-fetch is available");
-      }
-    }
-
     if (google.needkey && !opts.key) {
       throw new Error(
         `The engine google needs a key, please provide it`
@@ -408,13 +400,6 @@ const GoogleTranslate = function(options = {}) {
     }
     opts.key = opts.key || detect.key || opts.keys[opts.engine];
 
-    if (typeof fetch === "undefined") {
-      try {
-        global.fetch = require("node-fetch");
-      } catch (error) {
-        console.warn("Please make sure node-fetch is available");
-      }
-    }
 
     if (google.needkey && !opts.key) {
       throw new Error(
