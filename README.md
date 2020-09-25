@@ -11,7 +11,7 @@ This package can be used in on the browser. For the browser we are using `fetch`
 ### Install:
 
 ```bash
-npm install translate
+npm install google-translate-api-wrapper
 ```
 
 Then import it to use it:

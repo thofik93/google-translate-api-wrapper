@@ -1,6 +1,6 @@
 {
   "name": "google-translate-api-wrapper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "google translate api wrapper",
   "main": "google-translate.js",
   "scripts": {
