@@ -344,6 +344,7 @@ const google = {
        throw new Error(body.error.errors[0].message);
     }
     body = body.data.detections[0][0].language
+    return body
   })
 };
 
